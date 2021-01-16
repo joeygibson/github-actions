@@ -20,3 +20,5 @@ These scripts work for me, though I don't claim they are perfect. If you have su
 2. Copy the `.yml` files for your project's language to `.github/workflows`
 3. If your language has a `scripts` directory in it, then run `mkdir scripts` and copy the `scripts/` files into it.
 4. Commit yours changes, and check the `Actions` tab in the Github UI for your project
+
+Note: You may need to adjust the scripts depending on whether you use `master`, or the new `main` branch that Github is moving to.

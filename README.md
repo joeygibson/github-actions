@@ -13,6 +13,7 @@ These scripts work for me, though I don't claim they are perfect. If you have su
 * Rust
 * Go
 * Kotlin/Java using Gradle
+* Kotlin/Java using Maven
 
 ## Using
 

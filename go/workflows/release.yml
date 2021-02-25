@@ -41,9 +41,6 @@ jobs:
       - name: Build for release
         run: go build -o ${GITHUB_REPOSITORY#joeygibson/} -ldflags "-X main.sha1ver=`git rev-parse HEAD` -X main.buildTime=`date +'%Y-%m-%d_%T'` -X main.gitTag=${GITHUB_REF#refs/*/v}"
         shell: bash
-      - name: Set program name
-        run: echo "PROGRAM_NAME=${GITHUB_REPOSITORY#joeygibson/}" >> $GITHUB_ENV
-        shell: bash
       - name: Generate binary name
         run: ./scripts/generate-binary-name
         shell: bash
